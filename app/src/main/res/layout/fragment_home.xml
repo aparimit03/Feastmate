@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/primary_dark"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+<!--    <com.carousel.auna.ImageSlider-->
+<!--        android:id="@+id/imageSlider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:gravity="center"-->
+<!--        app:auto_cycle="true"-->
+<!--        app:corner_radius="20"-->
+<!--        app:delay="5"-->
+<!--        app:error_image="@drawable/error"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:period="2000"-->
+<!--        app:placeholder="@drawable/placeholder"-->
+<!--        app:selected_dot="@drawable/default_selected_dot"-->
+<!--        app:unselected_dot="@drawable/default_unselected_dot" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
