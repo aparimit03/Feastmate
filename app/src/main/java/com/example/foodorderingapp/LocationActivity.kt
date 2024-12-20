@@ -21,7 +21,7 @@ class LocationActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item,arrayOfCities)
         binding.locationDropdown.setAdapter(adapter)
 
-        binding.locationDropdown.setOnItemClickListener { parent, view, position, id ->
+        binding.locationDropdown.setOnItemClickListener { parent, _, position, _ ->
             var selectedLocation = parent.getItemAtPosition(position).toString()
             Toast.makeText(this,"Selected City : $selectedLocation",Toast.LENGTH_SHORT).show()
         }

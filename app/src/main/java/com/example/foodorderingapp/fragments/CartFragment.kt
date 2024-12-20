@@ -14,6 +14,5 @@ class CartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_cart, container, false)
-        return super.onCreateView(inflater, container, savedInstanceState)
     }
 }

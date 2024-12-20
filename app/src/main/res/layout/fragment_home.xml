@@ -3,26 +3,76 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/primary_dark"
     android:layout_height="match_parent"
+    android:background="@color/primary_dark"
     tools:context=".fragments.HomeFragment">
 
-<!--    <com.carousel.auna.ImageSlider-->
-<!--        android:id="@+id/imageSlider"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="200dp"-->
-<!--        android:gravity="center"-->
-<!--        app:auto_cycle="true"-->
-<!--        app:corner_radius="20"-->
-<!--        app:delay="5"-->
-<!--        app:error_image="@drawable/error"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:period="2000"-->
-<!--        app:placeholder="@drawable/placeholder"-->
-<!--        app:selected_dot="@drawable/default_selected_dot"-->
-<!--        app:unselected_dot="@drawable/default_unselected_dot" />-->
+    <com.carousel.auna.ImageSlider
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:auto_cycle="true"
+        app:corner_radius="50"
+        app:delay="5"
+        app:error_image="@drawable/error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:period="2000"
+        app:placeholder="@drawable/placeholder"
+        app:selected_dot="@drawable/default_selected_dot"
+        app:unselected_dot="@drawable/default_unselected_dot" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvFiller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageSlider">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Popular Orders"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background_frag_home"
+            android:text="See full menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPopularOrder"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvFiller" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

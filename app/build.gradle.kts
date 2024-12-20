@@ -9,6 +9,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
+        multiDexEnabled = true
         applicationId = "com.example.foodorderingapp"
         minSdk = 27
         targetSdk = 34
@@ -32,11 +33,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 }
 
@@ -54,6 +55,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation ("com.github.UmarAuna:Carousels-Kotlin:0.0.2")
-    implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation (libs.carousels.kotlin)
+    implementation (libs.picasso)
+
+    implementation(libs.androidx.multidex)
 }
